@@ -1,4 +1,4 @@
-package entity.autowrite;
+package entity.spEl;
 
 /**
  * Created by Administrator on 2016-10-27.
@@ -6,6 +6,8 @@ package entity.autowrite;
 public class Car {
     private String brand;
     private double price;
+    /*轮胎的周长*/
+    private double tyrePerimeter;
 
     public String getBrand() {
         return brand;
@@ -23,11 +25,20 @@ public class Car {
         this.price = price;
     }
 
+    public double getTyrePerimeter() {
+        return tyrePerimeter;
+    }
+
+    public void setTyrePerimeter(double tyrePerimeter) {
+        this.tyrePerimeter = tyrePerimeter;
+    }
+
     @Override
     public String toString() {
         return "Car{" +
                 "brand='" + brand + '\'' +
                 ", price=" + price +
+                ", tyrePerimeter=" + tyrePerimeter +
                 '}';
     }
 
