@@ -9,7 +9,7 @@
        若一个bean的class属性没有被指定，则该bean必须是个抽象bean
        -->
 
-       <bean id="address"  p:city="Beijing" p:street="WuDaoKou" abstract="true"></bean>
+       <bean id="address" class="entity.autowrite.Address" p:city="Beijing" p:street="WuDaoKou" abstract="true"></bean>
 
        <!--bean配置的继承：使用bean的parent属性指定继承哪个bean的配置-->
        <bean id="address2" class="entity.autowrite.Address" parent="address"></bean>
