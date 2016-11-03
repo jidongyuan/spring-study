@@ -10,6 +10,7 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="commons-logging" />
           <element id="library" level="project" name="c3p0-0.9.1.2" />
+          <element id="library" level="project" name="spring-aop-4.0.5.RELEASE" />
         </element>
       </element>
     </root>

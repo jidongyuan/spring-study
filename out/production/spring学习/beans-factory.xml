@@ -17,6 +17,11 @@
        <!--配置工厂的实例-->
        <bean id="carFactory" class="entity.factory.InstanceCarFactory">      </bean>
        <!--通过实例工厂方法来配置bean-->
+       <!--
+         class:指实例工厂方法全类名，
+         factory-method:指向静态工厂方法的名字
+         constructor-arg:如果工厂方法需要传入参数，则使用constructor-arg来配置参数
+       -->
        <bean id="car2" class="entity.factory.InstanceCarFactory" factory-method="getCar">
               <constructor-arg value="ford"></constructor-arg>
        </bean>
