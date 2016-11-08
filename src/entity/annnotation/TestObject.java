@@ -1,11 +1,11 @@
 package entity.annnotation;
 
-import org.springframework.stereotype.Component;
+/*import org.springframework.stereotype.Component;*/
 
 /**
  * Created by JDY on 2016/11/3.
  */
-@Component
+/*@Component*/
 public class TestObject {
 
 }

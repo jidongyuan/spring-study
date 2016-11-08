@@ -23,7 +23,11 @@ public class Main {
         UserService userService = (UserService)ctx.getBean("userService");
         System.out.println(userService);*/
 
-        UserRepository userRepository = (UserRepository)ctx.getBean("userRepository");
-        System.out.println(userRepository);
+        /*UserRepository userRepository = (UserRepository)ctx.getBean("userRepository");
+        System.out.println(userRepository);*/
+
+        UserController userController = (UserController)ctx.getBean("userController");
+        System.out.println(userController);
+        userController.execute();
     }
 }

@@ -4,26 +4,26 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-       <!--指定spring IOC容器扫描的包-->
-       <!--可以通过resource-pattern指定扫描的资源-->
-       <!-- <context:component-scan base-package="entity.annnotation"
-                                resource-pattern="repository/*.class"></context:component-scan>-->
+    <!--指定spring IOC容器扫描的包-->
+    <!--可以通过resource-pattern指定扫描的资源-->
+    <!-- <context:component-scan base-package="entity.annnotation"
+                             resource-pattern="repository/*.class"></context:component-scan>-->
 
-       <context:component-scan base-package="entity.annnotation" use-default-filters="false">
-              <!--context:exclude-filter 子节点指定排除哪些表达式的组件-->
-              <!--<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Repository"></context:exclude-filter>-->
-
-
-              <!--context:include-filter 子节点指定包含哪些表达式的组件，该节点需要use-default-filters="false"配合使用-->
-             <!-- <context:include-filter type="annotation" expression="org.springframework.stereotype.Repository"></context:include-filter>-->
+    <context:component-scan base-package="entity.annnotation">
+        <!--context:exclude-filter 子节点指定排除哪些表达式的组件-->
+        <!--<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Repository"></context:exclude-filter>-->
 
 
-             <!-- <context:exclude-filter type="assignable" expression="entity.annnotation.repository.UserRepository"></context:exclude-filter>-->
+        <!--context:include-filter 子节点指定包含哪些表达式的组件，该节点需要use-default-filters="false"配合使用-->
+        <!-- <context:include-filter type="annotation" expression="org.springframework.stereotype.Repository"></context:include-filter>-->
 
 
-              <context:include-filter type="assignable" expression="entity.annnotation.repository.UserRepository"></context:include-filter>
+        <!-- <context:exclude-filter type="assignable" expression="entity.annnotation.repository.UserRepository"></context:exclude-filter>-->
 
-       </context:component-scan>
+
+        <!-- <context:include-filter type="assignable" expression="entity.annnotation.repository.UserRepository"></context:include-filter>-->
+
+    </context:component-scan>
 
 
 </beans>
